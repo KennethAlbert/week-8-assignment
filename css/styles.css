@@ -16,11 +16,10 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    font-size: 0.98rem;
+    font-size: 0.97rem;
     font-weight: 400;
     letter-spacing: 0.01em;
     line-height: 1.7;
-    transition: background 0.3s;
 }
 
 .content-wrapper {
@@ -31,6 +30,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* --- Header & Navigation --- */
@@ -38,6 +39,11 @@ body {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 0.5rem 0;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    left: 0;
+    transform: none;
 }
 
 .main-nav {
@@ -47,18 +53,20 @@ body {
     flex-wrap: wrap;
     padding: 0 1rem;
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .nav-brand {
     font-family: var(--heading-font);
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: var(--primary-color);
     text-decoration: none;
     letter-spacing: 0.04em;
     opacity: 0;
     transform: translateY(-20px);
-    animation: fadeInUp 2s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.2s;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.2s;
     text-shadow: 0 2px 8px rgba(52,152,219,0.07);
 }
 
@@ -82,12 +90,12 @@ body {
     color: var(--text-color);
     padding: 0.5rem 1rem;
     font-weight: 500;
-    font-size: 0.98rem;
+    font-size: 0.97rem;
     border-radius: 4px;
     transition: color 0.3s, background 0.2s;
     opacity: 0;
     transform: translateY(-20px);
-    animation: fadeInUp 2s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.4s;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.4s;
 }
 
 .nav-links li a:hover {
@@ -108,7 +116,7 @@ body {
     cursor: pointer;
     z-index: 10;
     opacity: 0;
-    animation: fadeIn 2s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.6s;
+    animation: fadeIn 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.6s;
 }
 
 /* --- Hero & Section Animations --- */
@@ -126,7 +134,8 @@ body {
     text-align: center;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 2.2s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.2s;
+    animation: fadeInUp 1.7s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.2s;
+    box-sizing: border-box;
 }
 
 .hero-section img,
@@ -138,7 +147,7 @@ body {
     margin: 1rem 0;
     opacity: 0;
     transform: scale(0.95) rotate(-2deg);
-    transition: opacity 2s cubic-bezier(0.23, 1, 0.32, 1), transform 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: opacity 1.7s cubic-bezier(0.23, 1, 0.32, 1), transform 1.7s cubic-bezier(0.23, 1, 0.32, 1);
     box-shadow: 0 4px 24px rgba(52,152,219,0.08);
 }
 
@@ -150,12 +159,12 @@ img.visible {
 h1, h2, h3, p, ul, label {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 h1, .about-section h1 {
     font-family: var(--heading-font);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 1rem;
@@ -166,7 +175,7 @@ h1, .about-section h1 {
 
 h2, .about-section h2 {
     font-family: var(--heading-font);
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--accent-color);
     margin-top: 2rem;
@@ -177,7 +186,7 @@ h2, .about-section h2 {
 
 h3 {
     font-family: var(--heading-font);
-    font-size: 1rem;
+    font-size: 0.97rem;
     font-weight: 600;
     color: var(--primary-color);
     margin-top: 1.5rem;
@@ -187,7 +196,7 @@ h3 {
 
 p, ul, label {
     font-family: var(--body-font);
-    font-size: 0.98rem;
+    font-size: 0.97rem;
     color: var(--text-color);
     margin-bottom: 1rem;
     line-height: 1.7;
@@ -205,7 +214,7 @@ ul li, .about-section ul li {
     list-style: disc inside;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 2s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.5s;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.5s;
     font-family: var(--body-font);
     font-size: 0.95rem;
 }
@@ -228,6 +237,8 @@ a:hover {
     gap: 2rem;
     justify-content: center;
     margin: 2rem 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .service-item {
@@ -241,7 +252,8 @@ a:hover {
     transition: box-shadow 0.3s, transform 0.3s;
     opacity: 0;
     transform: translateY(30px) scale(0.97);
-    animation: fadeInUp 2.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: fadeInUp 1.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    box-sizing: border-box;
 }
 
 .service-item:hover {
@@ -280,9 +292,10 @@ a:hover {
     padding: 0.75rem 1rem;
     border: 1px solid #cfd8dc;
     border-radius: 6px;
-    font-size: 0.98rem;
+    font-size: 0.97rem;
     background: #f7fafc;
     transition: border 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
 }
 
 .contact-section input:focus,
@@ -310,7 +323,7 @@ button[type="submit"] {
     transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
     opacity: 0;
     transform: scale(0.95);
-    animation: fadeInUp 2s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.5s;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.5s;
     box-shadow: 0 2px 8px rgba(0,119,182,0.08);
 }
 
@@ -329,7 +342,7 @@ button:active,
 
 /* --- Success Animation for Form --- */
 .form-success {
-    animation: popFade 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: popFade 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     color: var(--primary-color);
     font-family: var(--heading-font);
     font-weight: bold;
@@ -341,15 +354,29 @@ button:active,
 /* --- Footer --- */
 .site-footer {
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
+    padding: 2rem 1rem;
+    background: linear-gradient(90deg, #0077b6 0%, #3498db 100%);
     color: #fff;
     margin-top: 2rem;
     opacity: 0;
-    animation: fadeIn 2s cubic-bezier(0.23, 1, 0.32, 1) forwards 1s;
+    animation: fadeIn 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards 1s;
     font-family: var(--body-font);
-    font-size: 0.95rem;
+    font-size: 1.08rem;
     letter-spacing: 0.01em;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0 -2px 16px rgba(52,152,219,0.12);
+    width: 100%;
+    position: relative;
+    left: 0;
+    transform: none;
+    box-sizing: border-box;
+}
+
+.site-footer p {
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.03em;
 }
 
 /* --- About Section Styles & Animations --- */
@@ -364,7 +391,8 @@ button:active,
     text-align: left;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 2.2s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.2s;
+    animation: fadeInUp 1.7s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.2s;
+    box-sizing: border-box;
 }
 
 .about-section h1,
@@ -373,7 +401,7 @@ button:active,
 .about-section ul {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .about-section h1 { animation-delay: 0.2s; }
@@ -386,7 +414,7 @@ button:active,
     list-style: disc inside;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 2s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.5s;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards 0.5s;
     font-family: var(--body-font);
     font-size: 0.95rem;
 }
@@ -429,18 +457,28 @@ button:active,
 }
 
 /* --- Responsive Layout for Mobile --- */
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
     .content-wrapper {
+        max-width: 100vw;
         padding: 0.5rem;
     }
+}
+
+@media (max-width: 900px) {
     .hero-section,
     .services-section,
     .contact-section,
     .about-section {
+        max-width: 98vw;
         padding: 1rem 0.5rem;
         margin: 1rem 0;
-        max-width: 100%;
     }
+    .service-list {
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 700px) {
     .main-nav {
         flex-direction: row;
         align-items: flex-start;
@@ -468,6 +506,7 @@ button:active,
         flex-direction: column;
         gap: 1rem;
         align-items: center;
+        width: 100%;
     }
     .service-item {
         max-width: 100%;
@@ -479,10 +518,26 @@ button:active,
         margin: 1rem 0;
         max-width: 100%;
     }
+    .site-footer,
+    .site-header {
+        font-size: 1rem;
+        padding: 1.2rem 0.5rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        left: 0;
+        transform: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 600px) {
     .contact-section {
+        padding: 1rem 0.2rem;
+    }
+    .site-footer,
+    .site-header {
+        font-size: 0.95rem;
         padding: 1rem 0.2rem;
     }
 }
