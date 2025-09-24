@@ -46,10 +46,9 @@ final-project-webdesign/
 
 ## Website Domain
 
-**Live Site:** [https://yourdomain.com](https://yourdomain.com)
+**Live Site:** [https://kennethalbert.github.io/week-8-assignment/index.html](https://kennethalbert.github.io/week-8-assignment/index.html)
 
-*(Replace `yourdomain.com` with your actual website domain)*
+
 
 ---
 
-Feel free to update this README as your project evolves!
